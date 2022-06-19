@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/breakingbad-book/static/css/main.4d78809e.css",
+    "main.js": "/breakingbad-book/static/js/main.33e1dd3d.js",
+    "static/js/787.b701888c.chunk.js": "/breakingbad-book/static/js/787.b701888c.chunk.js",
+    "index.html": "/breakingbad-book/index.html",
+    "main.4d78809e.css.map": "/breakingbad-book/static/css/main.4d78809e.css.map",
+    "main.33e1dd3d.js.map": "/breakingbad-book/static/js/main.33e1dd3d.js.map",
+    "787.b701888c.chunk.js.map": "/breakingbad-book/static/js/787.b701888c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d78809e.css",
+    "static/js/main.33e1dd3d.js"
+  ]
+}
