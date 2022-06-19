@@ -1,0 +1,9 @@
+.global_container {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.container_grid {
+    background-color: grey;
+}
