@@ -129,12 +129,49 @@ ul li {
     }
 
     .img_container {
-        width: 80px;
-        height: 120px;
-        border: 1px solid black;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
+        width: 120px;
+        height: 150px;
+        grid-area: img;
+    }
+
+    .card_container {
+        flex-direction: column;
+    }
+
+    .first_info span:nth-child(2) {
+        grid-area: span1;
+    }
+
+    .first_info span:nth-child(3) {
+        grid-area: span2;
+    }
+
+    .first_info {
+        border-bottom: 2px solid #d6d1d1;
+        border-right: none;
+        height: 50%;
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        'img span1'
+        'img span2';
+        justify-items: center;
         align-items: flex-start;
+        gap: 10px;
+        padding-bottom: .5em;
+    }
+
+    .other_info {
+        font-size: .9em;
+    }
+
+    .first_info span {
+        font-size: .9em;
+        max-width: 90%;
+    }
+
+
+    .other_info {
+        width: 80%;
     }
 }

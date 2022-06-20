@@ -49,7 +49,7 @@
     min-height: 100%;
 }
 
-@media (max-width: 620px) and (min-width: 568px) {
+@media (max-width: 640px) and (min-width: 568px) {
     .card_container {
         width: 200px;
     }
@@ -61,5 +61,11 @@
         height: 300px;
     }
 
+}
+
+@media (max-width: 400px) {
+    .card_container {
+        width: 140px;
+    }
 }
 
