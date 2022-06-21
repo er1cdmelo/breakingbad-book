@@ -1,4 +1,6 @@
 import styles from "./CharCard.module.css";
+import { AiFillCloseCircle } from "react-icons/ai"
+import { Link } from "react-router-dom";
 
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -29,6 +31,7 @@ const CharCard = () => {
         <Loading />
       ) : (
         <div className={styles.card_container}>
+          <Link to='/'><h3><AiFillCloseCircle /></h3></Link>
           <div className={styles.first_info}>
             <div className={styles.img_container}>
               <img src={character.img} />
