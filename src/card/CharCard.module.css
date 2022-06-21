@@ -155,7 +155,7 @@ ul li {
         grid-template-areas: 
         'img span1'
         'img span2';
-        justify-items: center;
+        justify-items:center;
         align-items: flex-start;
         gap: 10px;
         padding-bottom: .5em;
