@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 
 const EpCard = ({id, episode, season, title, airdate, serie}) => {
 
-  let imgcard = 'https://www.themoviedb.org/t/p/original/chw44B2VnLha8iiTdyZcIW0ZELC.png'
-  if(serie === 'Better Call Saul') imgcard = 'https://www.themoviedb.org/t/p/original/hwxBWyoeTefjafeqkIONxl0mXUV.png'
+  let imgcard = 'https://www.themoviedb.org/t/p/original/9PVfHEBXFeCBGvy4NVQLwh43iDt.jpg'
+  if(serie === 'Better Call Saul') imgcard = 'https://www.themoviedb.org/t/p/original/fC2HDm5t0kHl7mTm7jxMR31b7by.jpg'
 
   return (
     <Link to={`/episodes/${id}`}>

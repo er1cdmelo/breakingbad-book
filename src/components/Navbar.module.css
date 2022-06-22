@@ -81,6 +81,7 @@
         top: 3em;
         overflow: hidden;
         transition: .5s;
+        z-index: 2;
     }
 
     .navbar_container ul li {

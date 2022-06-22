@@ -19,7 +19,7 @@ const Episodes = () => {
         setTimeout(() => {
           setEpisodes(data)
           setLoading(false)
-        }, 3000)
+        }, 1500)
 
       })
       .catch((err) => console.log(err));
@@ -34,7 +34,7 @@ const Episodes = () => {
       {loading ? <Loading /> : (
         episodes.map((ep) => (
           <EpCard
-          id={ep.id}
+          id={ep.episode_id}
           episode={ep.episode}
           season={ep.season}
           title={ep.title}
