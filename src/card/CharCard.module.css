@@ -70,11 +70,14 @@
 .other_info span {
     font-size: 1.2em;
     font-weight: 600;
-    margin-bottom: 1.5em;
+    margin: .8em;
 }
 
-.first_info span .label,
-.other_info span .label {
+.other_info span:nth-child(4) {
+    margin: 0;
+}
+
+span .label {
     color: #7a7a7a;
     font-weight: bold;
     font-size: .8em;
@@ -83,7 +86,7 @@
 .other_info {
     width: 55%;
     height: 100%;
-    padding: 1em;
+    padding: .5em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,16 +98,22 @@
     font-size: 1em;
     color: #7a7a7a;
     font-weight: bold;
+    background-color: pink;
 }
 
 span ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 ul li {
     color: black;
     font-weight: 600;
+}
+
+span h4 {
+    margin: 0;
 }
 
 @media (max-width:600px) {

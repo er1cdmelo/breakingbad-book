@@ -10,6 +10,7 @@ const CharCard = () => {
   const { id } = useParams();
   const [character, setCharacter] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [kills, setKills] = useState(0)
 
   useEffect(() => {
     setLoading(true);
@@ -21,9 +22,24 @@ const CharCard = () => {
         console.log(data);
         setCharacter(data);
         setLoading(false);
+        killsSet(data.name)
       })
       .catch((err) => console.log(err));
   }, [id]);
+
+  
+
+  function killsSet (name) {
+    let nameSplited = name.split(' ')
+    fetch(`https://www.breakingbadapi.com/api/death-count?name=${nameSplited[0]}`)
+        .then(res => res.json())
+        .then(data => {
+          data = data[0]
+          console.log(data)
+          setKills(data.deathCount)
+        })
+        .catch(err => console.log(err))
+  }
 
   return (
     <div className={styles.global_container}>
@@ -60,13 +76,18 @@ const CharCard = () => {
             </span>
             <span>
               <span className={styles.label}>OCCUPATION </span>
-              <br />
               <ul>
                 {character.occupation
                   ? character.occupation.map((occ) => <li>{occ}</li>)
                   : ""}
               </ul>
             </span>
+            <span>
+              <span className={styles.label}>KILLS </span>
+              
+              <h4 style={{color:'red', fontSize:'1.2em'}}>{kills}</h4>
+            </span>
+            
           </div>
         </div>
       )}
