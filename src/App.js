@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import CharCard from "./card/CharCard";
 import Episodes from "./pages/Episodes";
 import EpInfo from "./card/EpInfo";
+import Deaths from "./pages/Deaths";
+import DeathInfo from "./card/DeathInfo";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/characters/:id" element={<CharCard />} />
         <Route path="/episodes/:id" element={<EpInfo />} />
         <Route path="/episodes" element={<Episodes />} />
+        <Route path="/deaths" element={<Deaths />} />
+        <Route path="/deaths/:name" element={<DeathInfo />} />
       </Routes>
     </Router>
   );

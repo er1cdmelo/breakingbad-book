@@ -22,7 +22,9 @@ const Navbar = () => {
           <Link to="/episodes">
             <li>Episodes</li>
           </Link>
-          <li>Soon</li>
+          <Link to="/deaths">
+            <li>Deaths</li>
+          </Link>
         </ul>
       )}
       <button
