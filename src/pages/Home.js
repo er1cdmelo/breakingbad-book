@@ -37,6 +37,7 @@ const Home = () => {
           name={char.name}
           img={char.img}
           id={char.char_id}
+          obj={char}
           />
         ))
       )}
