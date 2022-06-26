@@ -91,6 +91,16 @@ ul li {
 
 @media (max-width:600px) {
 
+    .card_container {
+        height: auto;
+        min-height: 450px;
+        flex-direction: column;
+    }
+
+    .first_info {
+        border: none;
+    }
+
     .first_info span ,
     .other_info span  {
         font-size: 1em;
@@ -102,11 +112,11 @@ ul li {
         font-weight: bold;
         font-size: .8em;
     }
-}
 
-@media (max-width:600px) {
-    .card_container {
-        flex-direction: column;
+    .card_container h3 {
+        font-size: 1.7em;
+        right: 2%;
+        top: -4%;
     }
 
     .other_info {

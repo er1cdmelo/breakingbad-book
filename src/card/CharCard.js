@@ -84,8 +84,7 @@ const CharCard = () => {
             </span>
             <span>
               <span className={styles.label}>KILLS </span>
-              
-              <h4 style={{color:'red', fontSize:'1.2em'}}>{kills}</h4>
+              <h5 style={{color:'red', fontSize:'1.2em'}}>{kills}</h5>
             </span>
             
           </div>

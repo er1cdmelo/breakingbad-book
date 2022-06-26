@@ -108,7 +108,7 @@ ul li {
     font-weight: 600;
 }
 
-@media (max-width:600px) {
+@media (max-width:640px) {
     .img_container img {
         width: auto;
         min-width: 100%;
@@ -136,6 +136,12 @@ ul li {
         color: #7a7a7a;
         font-weight: bold;
         font-size: .8em;
+    }
+
+    .card_container h3 {
+        font-size: 1.7em;
+        right: 2%;
+        top: -4%;
     }
 }
 

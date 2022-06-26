@@ -10,7 +10,7 @@ const Card = ({target, id, killer}) => {
     <Link to={`/deaths/${name}`}>
       <div className={styles.card_container}>
         <h3>{target}</h3>
-        <h4>by {killer}</h4>
+        <h5>by {killer}</h5>
     </div>
     </Link>
     
