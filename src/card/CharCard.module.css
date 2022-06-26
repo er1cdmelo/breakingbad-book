@@ -168,6 +168,8 @@ span h5 {
 
     .card_container {
         flex-direction: column;
+        min-height: 400px;
+        height: auto;
     }
 
     .first_info span:nth-child(2) {

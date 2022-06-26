@@ -1,0 +1,20 @@
+.footer_container {
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #055f2a;
+}
+
+.footer_container h3 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: .8em;
+    transition: .3s;
+}
+
+.footer_container h3 a:hover {
+    color: #daa22b;
+    transform: scale(1.1);
+}

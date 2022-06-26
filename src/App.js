@@ -8,6 +8,7 @@ import Episodes from "./pages/Episodes";
 import EpInfo from "./card/EpInfo";
 import Deaths from "./pages/Deaths";
 import DeathInfo from "./card/DeathInfo";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/deaths" element={<Deaths />} />
         <Route path="/deaths/:name" element={<DeathInfo />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

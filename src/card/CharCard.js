@@ -31,13 +31,14 @@ const CharCard = () => {
 
   function killsSet (name) {
     let nameSplited = name.split(' ')
-    if(name === 'Walter White Jr.') {nameSplited = 'Walter+White+Jr'}
+    
     fetch(`https://www.breakingbadapi.com/api/death-count?name=${nameSplited[0]}`)
         .then(res => res.json())
         .then(data => {
           data = data[0]
           console.log(data)
           setKills(data.deathCount)
+          if(name === 'Walter White Jr.') setKills(0)
         })
         .catch(err => console.log(err))
   }
