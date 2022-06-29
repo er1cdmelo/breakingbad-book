@@ -108,6 +108,19 @@ ul li {
     font-weight: 600;
 }
 
+span ul a  li{
+    color: #055f2a;
+    text-decoration:underline;
+}
+
+.clicavel {
+    color: blue
+}
+
+.clicavel:hover {
+    transform: rotate(120deg)
+}
+
 @media (max-width:640px) {
     .img_container img {
         width: auto;

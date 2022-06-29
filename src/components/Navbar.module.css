@@ -43,6 +43,10 @@
     color: #daa22b;
 }
 
+.navbar_container .selected {
+    color: #daa22b
+}
+
 .navbar_container button {
     background-color: #055f2a;
     border: 1px solid white;
@@ -51,6 +55,7 @@
     color: #fff;
     font-size: 1.7em;
 }
+
 
 @media (max-width:700px) {
     .navbar_container button {

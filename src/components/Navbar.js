@@ -1,12 +1,23 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import { BiMenu } from "react-icons/bi";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 const Navbar = () => {
   
+  const location = useLocation()
   const [dropdown, setDropdown] = useState(true);
+  const [selected, setSelected] = useState()
+
+  useEffect(() => {
+    let endereco = location.pathname
+    endereco = endereco.split('/')
+    if(endereco[1] === '') {
+      setSelected('characters')
+    }else setSelected(endereco[1])
+    
+  }, [location])
 
   return (
     <nav className={styles.navbar_container}>
@@ -17,13 +28,13 @@ const Navbar = () => {
       {dropdown && (
         <ul>
           <Link to="/">
-            <li>Characters</li>
+            <li className={selected === 'characters' ? styles.selected : ''}>Characters</li>
           </Link>
           <Link to="/episodes">
-            <li>Episodes</li>
+            <li className={selected === 'episodes' ? styles.selected : ''}>Episodes</li>
           </Link>
           <Link to="/deaths">
-            <li>Deaths</li>
+            <li className={selected === 'deaths' ? styles.selected : ''}>Deaths</li>
           </Link>
         </ul>
       )}
